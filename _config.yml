@@ -20,12 +20,25 @@
 
 title: Joshua Cook Portfolio
 email: joshcook452@yahoo.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Hi, my name's Josh! As of Septemeber 2026, I am a second year engineering physics student at UBC. 
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "jcook-200.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  jcook-200
+
+author:
+  name             : "Joshua Cook"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "Engineering Physics Student @ UBC"
+  email            : "joshcook452@yahoo.com"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jcook-200"
+    - label: "Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/resume.pdf"
+    
 
 # Build settings
 plugins:
@@ -34,6 +47,12 @@ plugins:
   - jekyll-remote-theme
   
 remote_theme: "mmistakes/minimal-mistakes"
+
+collections:
+  projects:
+  outputs: true
+  permalink: /projects/:path/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
