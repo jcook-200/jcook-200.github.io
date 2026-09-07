@@ -28,7 +28,7 @@ github_username:  jcook-200
 
 author:
   name             : "Joshua Cook"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars.githubusercontent.com/u/68484954?v=4&size=40" #"/assets/images/bio-photo.jpg"
   bio              : "Engineering Physics Student @ UBC"
   email            : "joshcook452@yahoo.com"
   links:
