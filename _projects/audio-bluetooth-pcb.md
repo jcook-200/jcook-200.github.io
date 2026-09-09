@@ -44,7 +44,7 @@ I had a digital piano, but it couldn't connect to my pair of Bluetooth headphone
 This project is a custom PCB based 3.5mm audio to Bluetooth (A2DP) converted. To achieve this I combined a PCM1808 audio to digital converted, which communicates with an <b>STM32F446</b> over <b>I2S</b>. The STM32, then communicates with a CC2564C through the Bluetooth Host Controller Interface (HCI), which uses <b>4-wire UART</b>.
 
 ## Schematics
-Detailed write-up of your hardware/firmware design, block diagrams, schematics, and challenges solved.
+
 {% include gallery id="schematic_gallery" caption="Hardware schematics created in KiCad." %}
 
 ## Layout
@@ -71,6 +71,9 @@ Crossed PCM1808
 Changed direction voltage translators
 
 ## Software
+I have programmed the STM32 firmware, using HAL to read data from the ADC into memory using DMA. Then it processes it to get a single channel, at 48KHz sampling rate and 16-bit resolution, to reduce the amount of data. Finally I exported the data through SWO. I then exported 
+The project is not yet completed. I am currently debugging the transceiver circuitry and trying to implement the drivers. 
+
 -Exported audio from PCM1808
 -Implementing HCI drivers & debugging more hardware (CTS) from cc2564C not dropping 
 
