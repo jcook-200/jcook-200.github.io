@@ -1,0 +1,10 @@
+---
+layout: single
+title: "APSC 100/101 Projects"
+excerpt: "CAD chair, CAD claw"
+header:
+  #teaser: /assets/images/projects/Bluetooth-Top-Layout.png
+sidebar:
+  - title: "Tools:"
+    text: "Fusion360"
+---
