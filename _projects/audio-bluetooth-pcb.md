@@ -33,7 +33,11 @@ schematic_gallery:
     image_path: /assets/images/projects/Audio2BluetoothV1-Audio.jpg
     alt: "PCM1808 & supporting components schematic file"
     title: "Audio schematic file"
-   
+repairs_gallery:
+  - url: /assets/images/projects/Audio2BluetoothV1.jpg
+    image_path: /assets/images/projects/Audio2BluetoothV1.jpg
+    alt: "Main schematic file"
+    title: "Main schematic file"
 ---
 I had a digital piano, but it couldn't connect to my pair of Bluetooth headphones that I carried with my everywhere. I looked at the options for AUX audio to Bluetooth, but every single one I found was battery powered. <em>This is the perfect opportunity to try PCB design!</em>
 
@@ -52,6 +56,14 @@ This PCB was a mixed signal PCB with audio, high speed digital and RF sections. 
 ![The last of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-back' }})
 
 ## Production
+As part of this project, I decided to assemble the PCBA. I stencilled the solder paste onto the board, placed the components, and used my reflow-oven.
+
+![The first of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-front' }})
+
+Unfortunately, the board did not come out perfectly, so I had to make some repairs using a hot air gun and soldering iron:
+
+{% include gallery id="repairs_gallery" caption="Repairs done on board" %}
+
 assembled by hand
 fixed mistakes in solder mask by hand
 rotated MCU
