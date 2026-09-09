@@ -10,6 +10,7 @@ sidebar:
     text: "Fusion360"
 ---
 
+This Project was a CAD exercise and an exploration of Fusion360 joints. I have modelled a piano action, which is primary mechanical mechanism that helps turn a key press into sound, using reference material from a variety of sources and angles in order to recreate a dimensionally accurate recreation based on a Steinway/Louis Renner action.
 
 ![CAD of Piano internal Mechanism]({{ '/assets/images/projects/Piano-Action-CAD.png' }})
 *CAD of grand-piano's internal mechanism*
