@@ -51,9 +51,9 @@ Detailed write-up of your hardware/firmware design, block diagrams, schematics, 
 
 This PCB was a mixed signal PCB with audio, high speed digital and RF sections. As such, I decided to use a SIG/GND - GND - GND - SIG/GND stackup. The traces on the top and bottom will connect power and signals while the GND layers will provide simple return paths to avoid EMI interfering with the sensitive analog/RF components.
 
-![The first of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-front' }})
+![The first of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-front.jpg' }})
 
-![The last of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-back' }})
+![The last of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-back.jpg' }})
 
 ## Production
 As part of this project, I decided to assemble the PCBA. I stencilled the solder paste onto the board, placed the components, and used my reflow-oven.
