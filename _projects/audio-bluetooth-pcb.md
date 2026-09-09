@@ -34,6 +34,9 @@ schematic_gallery:
     title: "Audio schematic file"
    
 ---
+I had a digital piano, but it couldn't connect to my pair of Bluetooth headphones that I carried with my everywhere. I looked at the options for AUX audio to Bluetooth, but every single one I found was battery powered. <em>This is the perfect opportunity to try PCB design!</em>
+
+This project is a custom PCB based 3.5mm audio to Bluetooth (A2DP) converted. To achieve this I combined a PCM1808 audio to digital converted, which communicates with an <b>STM32F446</b> over <b>I2S</b>. The STM32, then communicates with a CC2564C through the Bluetooth Host Controller Interface (HCI), which uses <b>4-wire UART</b>.
 
 ## Schematics
 Detailed write-up of your hardware/firmware design, block diagrams, schematics, and challenges solved.
