@@ -6,7 +6,7 @@ header:
   teaser: /assets/images/projects/Bluetooth-Top-Layout.png
 sidebar:
   - title: "Tech Stack"
-    text: "STM32F4, KiCad, C, FreeRTOS"
+    text: "STM32F4, KiCad, C/C++"
 schematic_gallery:
   - url: /assets/images/projects/Audio2BluetoothV1.jpg
     image_path: /assets/images/projects/Audio2BluetoothV1.jpg
@@ -42,6 +42,13 @@ This project is a custom PCB based 3.5mm audio to Bluetooth (A2DP) converted. To
 Detailed write-up of your hardware/firmware design, block diagrams, schematics, and challenges solved.
 {% include gallery id="schematic_gallery" caption="Hardware schematics created in KiCad." %}
 
+## Layout
+test
 
+## Production
+test
+
+## Software
+test
 
 
