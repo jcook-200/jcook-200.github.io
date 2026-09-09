@@ -50,7 +50,7 @@ remote_theme: "mmistakes/minimal-mistakes"
 
 collections:
   projects:
-    outputs: true
+    output: true
     permalink: /projects/:path/
 
 # Exclude from processing.
