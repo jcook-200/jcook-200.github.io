@@ -49,7 +49,7 @@ This project is a custom PCB based 3.5mm audio to Bluetooth (A2DP) converted. To
 
 ## Layout
 
-This PCB was a mixed signal PCB with audio, high speed digital and RF sections. As such, I decided to use a SIG/GND - GND - GND - SIG/GND stackup. The traces on the top and bottom will connect power and signals while the GND layers will provide simple return paths to avoid EMI interfering with the sensitive analog/RF components.
+This PCB was a <b>mixed signal PCB</b> with audio, high speed digital and RF sections. As such, I decided to use a SIG/GND - GND - GND - SIG/GND stack up. The traces on the top and bottom will connect power and signals while the GND layers will provide simple return paths to avoid EMI interfering with the sensitive analog/RF components.
 
 ![The first of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-front.png' }})
 *Layer 1 of 4 (Top)*
@@ -62,7 +62,7 @@ As part of this project, I decided to assemble the PCBA. I stencilled the solder
 
 ![The first of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-front.png' }})
 
-Unfortunately, the board did not come out perfectly, so I had to make some repairs using a hot air gun and soldering iron:
+Unfortunately, the board did not come out perfectly, so I had to make some repairs using a hot <b>air gun</b> and <b>soldering iron</b>:
 
 {% include gallery id="repairs_gallery" caption="Repairs done on board" %}
 
@@ -73,10 +73,8 @@ Crossed PCM1808
 Changed direction voltage translators
 
 ## Software
-I have programmed the STM32 firmware, using HAL to read data from the ADC into memory using DMA. Then it processes it to get a single channel, at 48KHz sampling rate and 16-bit resolution, to reduce the amount of data. Finally I exported the data through SWO. I then exported 
-The project is not yet completed. I am currently debugging the transceiver circuitry and trying to implement the drivers. 
+I have programmed the STM32 firmware, using <b>HAL</b> to read data from the ADC into memory using <b>DMA</b>. Then it processes it to get a single channel, at 48KHz sampling rate and 16-bit resolution, to reduce the amount of data. Finally I exported the data through <b>SWO</b>, before packing it into an uncompressed .WAV audio file.
 
--Exported audio from PCM1808
--Implementing HCI drivers & debugging more hardware (CTS) from cc2564C not dropping 
+The project is not yet completed. I am currently implementing the manufacturer's Bluetooth driver, while continuing to debug the hardware side of the Bluetooth transceiver. 
 
 
