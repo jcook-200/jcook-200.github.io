@@ -4,4 +4,18 @@
 
 layout: home
 author_profile: true
+title: "Engineering Portfolio"
+classes: wide
+
+header:
+  tease: /assests/images/bio-photo.JPG
+
+  entries_layout: grid
 ---
+
+{% assign projects = site.projects | sort: 'date' | reverse %}
+<div class="entries-grid">
+  {% for project in projects %}
+    {% include archive-single.md type="grid" %}
+  {% endfor %}
+</div>
