@@ -12,9 +12,8 @@ Welcome to my portfolio.
 
 ## Projects
 
-{% assign projects = site.projects | sort: 'date' | reverse %}
 <div class="entries-grid">
-  {% for project in projects %}
-    {% include archive-single.html type="grid" post=project %}
+  {% for post in site.projects %}
+    {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
