@@ -46,9 +46,14 @@ Detailed write-up of your hardware/firmware design, block diagrams, schematics, 
 test
 
 ## Production
-test
+assembled by hand
+fixed mistakes in solder mask by hand
+rotated MCU
+Crossed PCM1808
+Changed direction voltage translators
 
 ## Software
-test
+-Exported audio from PCM1808
+-Implementing HCI drivers & debugging more hardware (CTS) from cc2564C not dropping 
 
 
