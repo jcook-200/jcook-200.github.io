@@ -66,12 +66,6 @@ Unfortunately, the board did not come out perfectly, so I had to make some repai
 
 {% include gallery id="repairs_gallery" caption="Repairs done on board" %}
 
-assembled by hand
-fixed mistakes in solder mask by hand
-rotated MCU
-Crossed PCM1808
-Changed direction voltage translators
-
 ## Software
 I have programmed the STM32 firmware, using <b>HAL</b> to read data from the ADC into memory using <b>DMA</b>. Then it processes it to get a single channel, at 48KHz sampling rate and 16-bit resolution, to reduce the amount of data. Finally I exported the data through <b>SWO</b>, before packing it into an uncompressed .WAV audio file.
 
