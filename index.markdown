@@ -8,9 +8,12 @@ title: "Engineering Portfolio"
 classes: wide
 
 header:
-  tease: /assests/images/bio-photo.JPG
+  teaser: /assets/images/bio-photo.JPG
 
-  entries_layout: grid
+entries_layout: grid
+
+home_loop:
+  category: "none"
 ---
 
 {% assign projects = site.projects | sort: 'date' | reverse %}
