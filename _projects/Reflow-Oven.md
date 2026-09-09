@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Reflow Toaster Oven"
+classes: wide
 excerpt: "Modified toaster oven using Arduino, SPI temperature module and Solid State Relay with Qt interface"
 header:
   #teaser: /assets/images/projects/
