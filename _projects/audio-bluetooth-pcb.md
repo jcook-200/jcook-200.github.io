@@ -44,7 +44,12 @@ Detailed write-up of your hardware/firmware design, block diagrams, schematics, 
 {% include gallery id="schematic_gallery" caption="Hardware schematics created in KiCad." %}
 
 ## Layout
-test
+
+This PCB was a mixed signal PCB with audio, high speed digital and RF sections. As such, I decided to use a SIG/GND - GND - GND - SIG/GND stackup. The traces on the top and bottom will connect power and signals while the GND layers will provide simple return paths to avoid EMI interfering with the sensitive analog/RF components.
+
+![The first of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-front' }})
+
+![The last of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-back' }})
 
 ## Production
 assembled by hand
