@@ -33,11 +33,6 @@ schematic_gallery:
     image_path: /assets/images/projects/Audio2BluetoothV1-Audio.jpg
     alt: "PCM1808 & supporting components schematic file"
     title: "Audio schematic file"
-repairs_gallery:
-  - url: /assets/images/projects/Audio2BluetoothV1.jpg
-    image_path: /assets/images/projects/Audio2BluetoothV1.jpg
-    alt: "Main schematic file"
-    title: "Main schematic file"
 ---
 I had a digital piano, but it couldn't connect to my pair of Bluetooth headphones that I carried with my everywhere. I looked at the options for AUX audio to Bluetooth, but every single one I found was battery powered. <em>This is the perfect opportunity to try PCB design!</em>
 
@@ -58,13 +53,16 @@ This PCB was a <b>mixed signal PCB</b> with audio, high speed digital and RF sec
 *Layer 4 of 4 (Bottom)*
 
 ## Production
-As part of this project, I decided to assemble the PCBA. I stencilled the solder paste onto the board, placed the components, and used my reflow-oven.
+As part of this project, I decided to assemble the PCBA. I stencilled the solder paste onto the board, placed the components, and used my reflow-oven. The remaining through-hole components where soldered on by hand.
 
-![The first of the 4 layer PCB]({{ '/assets/images/projects/audio-to-bluetooth-layout-front.png' }})
+![Current State PCB]({{ '/assets/images/projects/Current-PCB.jpg' }})
 
 Unfortunately, the board did not come out perfectly, so I had to make some repairs using a hot <b>air gun</b> and <b>soldering iron</b>:
 
-{% include gallery id="repairs_gallery" caption="Repairs done on board" %}
+1) Rotated STM32 usign hot air gun (the small circle is the pin 1 marker, not the big circle)
+2) Lifted and crossed 2 pins on the ADC
+3) Fixed tombstoned 0402 capacitor
+4) lifted and combined 2 pins to change direction on level-shifter
 
 ## Software
 I have programmed the STM32 firmware, using <b>HAL</b> to read data from the ADC into memory using <b>DMA</b>. Then it processes it to get a single channel, at 48KHz sampling rate and 16-bit resolution, to reduce the amount of data. Finally I exported the data through <b>SWO</b>, before packing it into an uncompressed .WAV audio file.
