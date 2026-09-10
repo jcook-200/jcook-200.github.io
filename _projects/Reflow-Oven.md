@@ -14,6 +14,14 @@ sidebar:
 what is it?
 
 ## Hardware & Firmware
+
+![Hardware Diagram]({{ '/assets/images/projects/Reflow-Toaster-Oven-Hardware.jpg' }})
+*Hardware Diagram*
+
+![CAD of Piano internal Mechanism]({{ '/assets/images/projects/Piano-Action-CAD.png' }})
+
+![CAD of Piano internal Mechanism]({{ '/assets/images/projects/Piano-Action-CAD.png' }})
+
 -Removed old controls and mecahnism. 
 -Added single SSR to control all 4 elements
 -Added MAX31855 module with k-type thermocouple
