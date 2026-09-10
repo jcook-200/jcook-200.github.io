@@ -6,8 +6,14 @@ excerpt: "Modified toaster oven using Arduino, SPI temperature module and Solid 
 header:
   teaser: /assets/images/projects/Reflow-Interface.jpg
 sidebar:
-  - title: "Tech Stack"
-    text: "SPI, Arduino, C, Serial Communication, Python, Qt "
+  - title: "Domain"
+    text: "Embedded Systems & PCBA Manufacturing"
+  - title: "Firmware & Logic"
+    text: "C/C++ (Arduino), PID Control Loop, SPI Protocol, UART Serial Communication"
+  - title: "Hardware & Electronics"
+    text: "MAX31855 Thermocouple IC, K-Type Thermocouple, Solid State Relay (SSR)"
+  - title: "Software & GUI"
+    text: "Python, PySide / PyQt, Custom CSV Profile Parser, Real-Time Plotting"
 ---
 In PCBA manufacturing, and specifically when it comes to surface mounted components, it is standard practice to:
 
@@ -33,3 +39,9 @@ Used Qt in python to create an interface. This interface reads data from the Ard
 ![Qt Reflow Oven Interface]({{ '/assets/images/projects/Reflow-Interface.jpg' }})
 
 As you see the interface includes a graph with target temp in red and observed temperature in white. There is also a button that allows you to import csv data for the target temperature.
+
+### Key Highlights
+
+* **Precision Thermal Control:** Implemented an Arduino-based closed-loop PID controller reading temperature data via SPI from a MAX31855 thermocouple interface.
+* **Mains Voltage Switching:** Interfaced microcontroller GPIO to a Solid State Relay (SSR) to safely drive high-power heating elements for precise reflow profile tracking.
+* **Desktop Interface & Plotting:** Built a Python/Qt GUI to parse custom CSV thermal profiles, stream temperature setpoints via Serial, and plot real-time process data.
