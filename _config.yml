@@ -31,13 +31,12 @@ author:
   bio              : "Engineering Physics Student @ UBC"
   email            : "joshcook452@yahoo.com"
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jcook-200"
     - label: "Resume"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/resume.pdf"
-    
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jcook-200"
 
 # Build settings
 plugins:
