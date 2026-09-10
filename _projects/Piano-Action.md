@@ -20,3 +20,9 @@ This Project was a CAD exercise and an exploration of Fusion360 joints. I have m
 
 ![CAD of Piano internal Mechanism]({{ '/assets/images/projects/Piano-Action-CAD.png' }})
 *CAD of grand-piano's internal mechanism*
+
+### Key Highlights
+
+* **Kinematics & Motion:** Configured rotational and sliding joints (revolute and pin-slider) to simulate the multi-lever chain from key depression to hammer drop.
+* **Reverse Engineering:** Interpreted multi-angle photos and reference cross-sections to establish accurate pivot points and leverage ratios.
+* **Component-Level Detail:** Modeled each distinct mechanical element—including the whippen, jack, repetition lever, shank, and hammer head—to capture true-to-life interaction.
