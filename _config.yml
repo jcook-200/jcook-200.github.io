@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Joshua Cook Portfolio
+title: Engineering Portfolio
 email: joshcook452@yahoo.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
