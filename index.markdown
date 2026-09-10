@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/bio-photo.JPG
 ---
 
-Welcome to my portfolio.
+Welcome to my portfolio! My name is Josh and I am a second year engineering physics student at UBC. 
 
 ## Projects
 
