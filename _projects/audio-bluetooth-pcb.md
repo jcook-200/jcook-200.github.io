@@ -6,8 +6,16 @@ excerpt: "STM32-based hardware design featuring PCM1808 ADC and isolated power r
 header:
   teaser: /assets/images/projects/Bluetooth-Top-Layout.png
 sidebar:
-  - title: "Tech Stack"
-    text: "STM32F4, KiCad, C/C++"
+  - title: "Domain"
+    text: "Mixed-Signal PCB Design & Embedded Hardware"
+  - title: "Core Architecture"
+    text: "STM32F446 MCU, PCM1808 Audio ADC, CC2564C Bluetooth Transceiver"
+  - title: "EDA & Layout"
+    text: "KiCad (4-Layer Stackup, SIG-GND-GND-SIG Controlled Impedance & EMI Mitigation)"
+  - title: "Protocols & Bus Interfaces"
+    text: "I2S Audio Stream, 4-Wire UART (HCI), SPI, SWO Debug, DMA Data Pipelines"
+  - title: "Assembly & Bring-Up"
+    text: "Solder Stenciling, Reflow Oven SMT Assembly, BGA/QFN Rework, Hot Air & Iron Repair"
 schematic_gallery:
   - url: /assets/images/projects/Audio2BluetoothV1.jpg
     image_path: /assets/images/projects/Audio2BluetoothV1.jpg
@@ -67,6 +75,12 @@ Unfortunately, the board did not come out perfectly, so I had to make some repai
 ## Software
 I have programmed the STM32 firmware, using <b>HAL</b> to read data from the ADC into memory using <b>DMA</b>. Then it processes it to get a single channel, at 48KHz sampling rate and 16-bit resolution, to reduce the amount of data. Finally I exported the data through <b>SWO</b>, before packing it into an uncompressed .WAV audio file.
 
-The project is not yet completed. I am currently implementing the manufacturer's Bluetooth driver, while continuing to debug the hardware side of the Bluetooth transceiver. 
+The project is not yet completed. I am currently implementing the manufacturer's Bluetooth driver, while continuing to debug the hardware side of the Bluetooth transceiver.
+
+### Key Highlights
+
+* **Mixed-Signal Architecture:** Designed a custom 4-layer PCB integrating high-speed digital lines, 24-bit I2S audio routing, and a 2.4 GHz RF Bluetooth transceiver with dedicated continuous ground planes for EMI containment.
+* **Protocol & Data Pipeline:** Interfaces a PCM1808 ADC over I2S directly to an STM32F446, leveraging circular DMA buffers for real-time audio sample processing without CPU overhead.
+* **Full-Cycle Fabrication & Rework:** Handled complete PCBA assembly from solder paste stenciling and reflow heating down to fine-pitch QFP/QFN hot-air pin corrections and 0402 SMD rework.
 
 
