@@ -14,7 +14,7 @@ In reality, noise can be produced by all components in any circuit. These are on
 
 (https://www.analog.com/media/en/analog-dialogue/volume-55/number-2/rf-signal-chain-discourse.pdf, https://www.ti.com/lit/an/slaa652/slaa652.pdf?ts=1789289439361, https://www.ti.com/lit/an/sdaa435/sdaa435.pdf?ts=1789312543362, https://markimicrowave.com/technical-resources/application-notes/a-practical-guide-to-noise-in-frequency-conversions/)
 
-###GEMINI:
+##GEMINI:
 In an RF TX communication chain, which components could introduce noise? How can this noise be managed?
 
 Part 1: Components That Introduce Noise
