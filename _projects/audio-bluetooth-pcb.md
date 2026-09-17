@@ -67,9 +67,9 @@ As part of this project, I decided to assemble the PCBA. I stencilled the solder
 
 Unfortunately, the board did not come out perfectly, so I had to make some repairs using a hot <b>air gun</b> and <b>soldering iron</b>:
 
-1) Rotated STM32 usign hot air gun (the small circle is the pin 1 marker, not the big circle)
-2) Lifted and crossed 2 pins on the ADC
-3) Fixed tombstoned 0402 capacitor
+1) Rotated STM32 usign hot air gun (the small circle is the pin 1 marker, not the big circle) <br>
+2) Lifted and crossed 2 pins on the ADC <br>
+3) Fixed tombstoned 0402 capacitor <br>
 4) lifted and combined 2 pins to change direction on level-shifter
 
 ## Software
