@@ -16,13 +16,13 @@ sidebar:
     text: "Mechanical Joint Assembly, Parametric Linkages, Multi-Body Constraints, Reverse Engineering"
 ---
 
-This Project was a CAD exercise and an exploration of Fusion360 joints. I have modelled a piano action, which is primary mechanical mechanism that helps turn a key press into sound, using reference material from a variety of sources and angles in order to recreate a dimensionally accurate recreation based on a Steinway/Louis Renner action.
+This Project was a CAD exercise and an exploration of Fusion360 joints. I have modelled a piano action, which is the primary mechanical mechanism that helps turn a key press into sound, using reference material from a variety of sources and angles in order to recreate a dimensionally accurate recreation based on a Steinway/Louis Renner action.
 
 ![CAD of Piano internal Mechanism]({{ '/assets/images/projects/Piano-Action-CAD.png' }})
-*CAD of grand-piano's internal mechanism*
+*CAD of a grand-piano's internal mechanism*
 
 ### Key Highlights
 
 * **Kinematics & Motion:** Configured rotational and sliding joints (revolute and pin-slider) to simulate the multi-lever chain from key depression to hammer drop.
 * **Reverse Engineering:** Interpreted multi-angle photos and reference cross-sections to establish accurate pivot points and leverage ratios.
-* **Component-Level Detail:** Modeled each distinct mechanical element—including the whippen, jack, repetition lever, shank, and hammer head—to capture true-to-life interaction.
+* **Component-Level Detail:** Modelled each distinct mechanical element—including the whippen, jack, repetition lever, shank, and hammer head—to capture true-to-life interaction.
