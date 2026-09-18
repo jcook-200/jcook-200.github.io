@@ -79,9 +79,9 @@ The project is not yet completed. I am currently implementing the manufacturer's
 
 ### Key Highlights
 
-**Mixed-Signal Architecture:** Designed a custom 4-layer PCB integrating high-speed digital lines, 24-bit I2S audio routing, and a 2.4 GHz RF Bluetooth transceiver with dedicated continuous ground planes for EMI containment.
+**Mixed-Signal Architecture:** Designed a custom 4-layer PCB integrating high-speed digital lines, 24-bit I2S audio routing, and a 2.4 GHz RF Bluetooth transceiver with dedicated continuous ground planes for EMI containment. <b>
 
-**Protocol & Data Pipeline:** Interfaces a PCM1808 ADC over I2S directly to an STM32F446, leveraging circular DMA buffers for real-time audio sample processing without CPU overhead.
+**Protocol & Data Pipeline:** Interfaces a PCM1808 ADC over I2S directly to an STM32F446, leveraging circular DMA buffers for real-time audio sample processing without CPU overhead.<b>
 
-**Full-Cycle Fabrication & Rework:** Handled complete PCBA assembly from solder paste stencilling and reflow heating down to fine-pitch QFP/QFN hot-air pin corrections and 0402 SMD rework.
+**Full-Cycle Fabrication & Rework:** Handled complete PCBA assembly from solder paste stencilling and reflow heating down to fine-pitch QFP/QFN hot-air pin corrections and 0402 SMD rework.<b>
 
