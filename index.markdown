@@ -5,6 +5,7 @@ title: "Engineering Portfolio"
 classes: wide
 
 header:
+  image: /assets/images/banner.jpg
   teaser: /assets/images/bio-photo.JPG
 ---
 
