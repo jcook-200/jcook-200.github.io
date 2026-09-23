@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Audio-to-Bluetooth PCB"
+order: 1
 classes: wide
 excerpt: "STM32-based hardware design featuring PCM1808 ADC and isolated power routing."
 header:
