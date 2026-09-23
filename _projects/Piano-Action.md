@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "CAD Piano Action"
+order: 3
 classes: wide
 excerpt: "Accurate recreation of Piano Mechanism"
 header:
