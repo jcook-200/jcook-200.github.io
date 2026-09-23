@@ -14,7 +14,8 @@ Welcome to my portfolio! My name is Josh and I am a second year engineering phys
 ## Projects
 
 <div class="entries-grid">
-  {% for post in site.projects %}
+  {% assign sorted_projects = site.projects | sort: "order" %}
+  {% for post in sorted_projects %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
