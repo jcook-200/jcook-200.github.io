@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true
-#title: "Engineering Portfolio"
+title: "Engineering Portfolio"
 classes: wide
 
 header:
