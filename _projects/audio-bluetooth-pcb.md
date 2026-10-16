@@ -76,7 +76,9 @@ Unfortunately, the board did not come out perfectly, so I had to make some repai
 ## Software
 I have programmed the STM32 firmware, using <b>HAL</b> to read data from the ADC into memory using <b>DMA</b>. Then it processes it to get a single channel, at 48KHz sampling rate and 16-bit resolution, to reduce the amount of data. Finally, I exported the data through <b>SWO</b>, before packing it into an uncompressed .WAV audio file.
 
-The project is not yet completed. I am currently implementing the manufacturer's Bluetooth driver, while continuing to debug the hardware side of the Bluetooth transceiver.
+The project is not yet completed. I initially tried implementing the manufacturer's Bluetooth driver, while continuing to debug the hardware side of the Bluetooth transceiver, but stopped due to the driver being made for older STM32 firmware. Recently, I have started to make my own driver, due to the nature of my project, using an existing driver and Bluetooth stack would only use a fraction of the available commands, while requiring lots of modifications to run multiple DMA's and non-standard pinout.
+
+As of now, I have successfully initialised the Bluetooth transceiver and had it successfully detected using my laptop's Bluetooth.
 
 ### Key Highlights
 
